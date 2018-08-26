@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.phonebook.MainActivity">
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+         />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/call"
+        android:id="@+id/button3"
+        android:layout_margin="16dp"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentRight="true"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ViewLog"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/button4"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentRight="true"
+        />
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/blank"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/button5"
+        android:layout_alignParentLeft="true"
+        />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/call"
+        android:id="@+id/button2"
+        android:layout_margin="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/call"
+        android:id="@+id/button1"
+        android:layout_margin="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Contacts"
+        android:id="@+id/button"
+        android:onClick="loadAddActivity"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>
